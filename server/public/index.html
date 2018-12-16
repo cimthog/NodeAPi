@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Using APIs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+            <div class="users">
+                <h2>User List</h2>
+      
+                </div>
+              
+                <div class="add">
+                    <h2>Add new User</h2>
+                      <form action="/adduser" method="POST">
+                          <input type="text" placeholder="Username" name="username">
+                          <input type="text" placeholder="Email" name="email">
+                          <input type="text" placeholder="Address" name="address">
+              
+                          <button type="submit">Add User</button>
+
+                      </form>
+                      <div class="search">
+                          <h2>Search User</h2>
+                            <form action="/findUser" method="GET">
+                                <input type="text" placeholder="Search User by name" name="username">
+                                <button type="submit">Search</button>
+                            </form>
+                        </div>
+                    </form>
+                    <div class="update">
+                        <h2>Update User</h2>
+                          <form action="/updateUser" method="POST">
+                              <input type="text" placeholder="Username to update" name="name">
+                              <input type="text" placeholder="address" name="address">
+                              <button type="submit">Submit</button>
+                          </form>
+                      </div>
+                </div>
+            
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
